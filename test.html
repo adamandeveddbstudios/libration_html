@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="w-full text-yana-silver sm:p-28 p-8 h-dvh bg-yana-gray supportBarTrigger">
+        <div id="scrollableDiv" onscroll="updateScrollProgress()">
+          <div id="progressBar">
+              <div id="progressIndicator"></div>
+          </div>
+          <div class="content">
+            <div class="flex-col flex w-1/2 box">
+              <h4 class="font-JBM pb-8 font-semibold text-5xl">
+                1 in 3 North American kids
+              </h4>
+              <p class="font-Roboto pb-8 font-normal text-2xl">
+                think the Holocaust was exaggerated, fabricated or aren’t sure if it even happened.
+              </p>
+              <a class="font-Roboto font-light text-[10px] text-left block" href="https://www.liberation75.org/survey">Source: https://www.liberation75.org/survey</a>
+            </div>
+       
+            <div class="flex-col flex w-1/2 box">
+              <h4 class="font-JBM pb-8 font-semibold text-3xl sm:text-5xl">And 42% of students</h4>
+              <p class="font-Roboto pb-8 font-normal text-base sm:text-2xl">
+                have unequivocally witnessed an antisemitic event – many of these incidents have taken place in schools or playgrounds.
+              </p>
+              <a class="font-Roboto font-light text-[10px]" href="https://www.liberation75.org/survey">Source: https://www.liberation75.org/survey</a>
+            </div>
+       
+            <div class="flex-col flex w-1/2 box">
+              <h4 class="font-JBM pb-8 font-semibold text-3xl sm:text-5xl">
+                Early Holocaust education can be the difference.
+              </h4>
+            </div>
+       
+            <div class="flex-col flex w-1/2 box">
+              <h4 class="font-JBM pb-8 font-semibold text-3xl sm:text-5xl">
+                It just needs to be mandated.
+              </h4>
+            </div>
+       
+            <div class="flex-col flex w-1/2 box">
+              <h4 class="font-JBM pb-8 font-semibold text-3xl sm:text-5xl">Holocaust education isn’t only about Jewish people.</h4>
+              <p class="font-Roboto pb-8 font-normal text-base sm:text-2xl">
+                It teaches kids to stand up against hate, intolerance and indifference. And the importance of protecting freedom and democracy. The learnings are universal — with the outcomes focused on the empathy and understanding of all races and religions.
+              </p>
+            </div>
+       
+            <div class="flex-col flex w-1/2 box">
+              <h4 class="font-JBM pb-8 font-semibold text-3xl sm:text-5xl">It’s about making kids better citizens and the world a better place.</h4>
+            </div>
+       
+          </div>
+        </div>
+      </section>
+       
+      <style>
+          #scrollableDiv {
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+            -ms-scroll-snap-type: y mandatory;
+            scroll-snap-type: y mandatory;
+            height: 400px;
+            position:relative;
+          }
+          #scrollableDiv .content{
+            padding-left: 30px;
+            padding-top: 30px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+          }
+          #scrollableDiv .content .box{
+            scroll-snap-align: start;
+            height:400px;
+          }
+          #progressBar {
+              height: 100%; /* Progress bar takes the full width */
+              width: 2px; /* Height of the progress bar */
+              background-color: #E8DAD1; /* Background color of the progress bar */
+              position: sticky;
+              top: 0px;
+              left: 0px;
+          }
+          #progressIndicator {
+              height: 15%; /* Full height of the progress indicator */
+              background-color: #1F88EA; /* Color of the progress indicator */
+          }
+          #scrollableDiv::-webkit-scrollbar {
+            width: 10px;
+            display:none;
+          }
+      </style>
+      <script>
+          function updateScrollProgress() {
+              const scrollableDiv = document.getElementById('scrollableDiv');
+              const progressBar = document.getElementById('progressIndicator');
+              const scrollableHeight = scrollableDiv.scrollHeight - scrollableDiv.clientHeight;
+              const scrollProgress = (scrollableDiv.scrollTop / scrollableHeight) * 100;
+              progressBar.style.height = scrollProgress + '%';
+          }
+      </script>
+      <!-- section three scroll content end -->
+</body>
+</html>

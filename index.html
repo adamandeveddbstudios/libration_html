@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liberation75</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="site_header">
+      <div class="container">
+        <div class="items">
+          <div class="lang">
+            <a href="#" class="active me-2">EN</a>
+            <a href="#">FR</a>
+          </div>
+          <div class="toggle">
+            <a
+              href="javascript:void(0)"
+              onclick="menuToggle()"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample"
+              aria-controls="offcanvasExample"
+            >
+              <img id="menubar" src="images/bar.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="container">
+          
+          <nav class="menu">
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li class="menudrop">
+                <a href="#">STORIES <span>+</span></a>
+                <ul class="drop_item">
+                  <li><a href="#">ROSE’S STORY</a></li>
+                  <li><a href="#">GERSHON’S STORY</a></li>
+                  <li><a href="#">JUDY’S STORY</a></li>
+                  <li><a href="#">GEORGINE’S STORY</a></li>
+                  <li><a href="#">ANDY’S STORY</a></li>
+                </ul>
+              </li>
+              <li><a href="#">EDUCATIONAL TOOLKIT</a></li>
+              <li><a href="#">THE MAKING OF</a></li>
+            </ul>
+          </nav>
+          <div class="social">
+            <div class="text">GROW THE SUPPORT. SHARE THE CAUSE.</div>
+            <ul>
+              <li>
+                <a href="#"><img src="images/instagram.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/facebook.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/x-twitter.svg" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="sos offcanvas_sos">
+            <div class="text">The lessons of the Holocaust are universal.</div>
+            <a href="#" class="sos_cta">SHOW YOUR SUPPORT</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="banner">
+      <img src="images/banner2.jpg" class="banner_img" alt="" />
+      <img src="images/young_again.svg" class="young_text" alt="">
+    </div>
+
+    <div class="story_slider">
+      <div class="container">
+        <div class="relative">
+          <div class="swiper storySlider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/story_person.png" alt="" />
+                <div class="play">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="99.389" height="99.389" viewBox="0 0 99.389 99.389">
+                    <g id="play-circle">
+                      <path id="Path_263" data-name="Path 263" d="M49.694,93.177A43.483,43.483,0,1,1,93.177,49.694,43.483,43.483,0,0,1,49.694,93.177Zm0,6.212A49.694,49.694,0,1,0,0,49.694,49.694,49.694,0,0,0,49.694,99.389Z" fill="#d9e3e8"/>
+                      <path id="Path_264" data-name="Path 264" d="M7.683,5.344a3.106,3.106,0,0,1,3.23.236L32.655,21.11a3.106,3.106,0,0,1,0,5.056L10.914,41.7A3.106,3.106,0,0,1,6,39.167V8.108A3.106,3.106,0,0,1,7.683,5.344Z" transform="translate(31.271 26.057)" fill="#d9e3e8"/>
+                    </g>
+                  </svg>    
+                </div>
+                <div class="action">
+                  <a href="#" class="cta">SEE HER STORY</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="images/story_person.png" alt="" />
+                <div class="play">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="99.389" height="99.389" viewBox="0 0 99.389 99.389">
+                    <g id="play-circle">
+                      <path id="Path_263" data-name="Path 263" d="M49.694,93.177A43.483,43.483,0,1,1,93.177,49.694,43.483,43.483,0,0,1,49.694,93.177Zm0,6.212A49.694,49.694,0,1,0,0,49.694,49.694,49.694,0,0,0,49.694,99.389Z" fill="#d9e3e8"/>
+                      <path id="Path_264" data-name="Path 264" d="M7.683,5.344a3.106,3.106,0,0,1,3.23.236L32.655,21.11a3.106,3.106,0,0,1,0,5.056L10.914,41.7A3.106,3.106,0,0,1,6,39.167V8.108A3.106,3.106,0,0,1,7.683,5.344Z" transform="translate(31.271 26.057)" fill="#d9e3e8"/>
+                    </g>
+                  </svg>    
+                </div>
+                <div class="action">
+                  <a href="#" class="cta">SEE HER STORY</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="images/story_person.png" alt="" />
+                <div class="play">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="99.389" height="99.389" viewBox="0 0 99.389 99.389">
+                    <g id="play-circle">
+                      <path id="Path_263" data-name="Path 263" d="M49.694,93.177A43.483,43.483,0,1,1,93.177,49.694,43.483,43.483,0,0,1,49.694,93.177Zm0,6.212A49.694,49.694,0,1,0,0,49.694,49.694,49.694,0,0,0,49.694,99.389Z" fill="#d9e3e8"/>
+                      <path id="Path_264" data-name="Path 264" d="M7.683,5.344a3.106,3.106,0,0,1,3.23.236L32.655,21.11a3.106,3.106,0,0,1,0,5.056L10.914,41.7A3.106,3.106,0,0,1,6,39.167V8.108A3.106,3.106,0,0,1,7.683,5.344Z" transform="translate(31.271 26.057)" fill="#d9e3e8"/>
+                    </g>
+                  </svg>    
+                </div>
+                <div class="action">
+                  <a href="#" class="cta">SEE HER STORY</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="images/story_person.png" alt="" />
+                <div class="play">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="99.389" height="99.389" viewBox="0 0 99.389 99.389">
+                    <g id="play-circle">
+                      <path id="Path_263" data-name="Path 263" d="M49.694,93.177A43.483,43.483,0,1,1,93.177,49.694,43.483,43.483,0,0,1,49.694,93.177Zm0,6.212A49.694,49.694,0,1,0,0,49.694,49.694,49.694,0,0,0,49.694,99.389Z" fill="#d9e3e8"/>
+                      <path id="Path_264" data-name="Path 264" d="M7.683,5.344a3.106,3.106,0,0,1,3.23.236L32.655,21.11a3.106,3.106,0,0,1,0,5.056L10.914,41.7A3.106,3.106,0,0,1,6,39.167V8.108A3.106,3.106,0,0,1,7.683,5.344Z" transform="translate(31.271 26.057)" fill="#d9e3e8"/>
+                    </g>
+                  </svg>    
+                </div>
+                <div class="action">
+                  <a href="#" class="cta">SEE HER STORY</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"><img src="images/chevron-double-left.svg" alt=""></div>
+            <div class="swiper-button-next"><img src="images/chevron-double-left.svg" alt=""></div>
+          </div>
+          <div class="content text-center">
+            <h2 class="mb-4">
+              Kids can only learn from the<br>past if they know about it.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="scrollableDiv">
+      <div class="container">
+      <div id="scrollableDiv" onscroll="updateScrollProgress()">
+        <div id="progressBar">
+            <div id="progressIndicator"></div>
+        </div>
+        <div class="content">
+          <div class="sec box">
+            <h2>1 in 3 North<br>American teens</h2>
+            <p>think the Holocaust was exaggerated,<br>fabricated or aren’t sure if it even happened.</p>
+            <p class="source">Source: <a target="_blank" href="https://www.liberation75.org/survey">https://www.liberation75.org/survey</a></p>
+          </div>
+          <div class="sec box">
+            <h2>40% of students</h2>
+            <p>say they learned about the Holocaust<br>from social media. The wrong place<br>for a crucial lesson. </p>
+            <p class="source">Source: <a target="_blank" href="https://www.liberation75.org/survey">https://www.liberation75.org/survey</a></p>
+          </div>
+          <div class="sec box">
+            <h2>The right place?<br>A classroom.</h2>
+          </div>
+          <div class="sec box">
+            <h2>The right place?<br>A classroom.</h2>
+            <h2>The right time?<br>In grade 6.</h2>
+          </div>
+          <div class="sec box">
+            <h2>The right place?<br>A classroom.</h2>
+            <h2>The right time?<br>In Grade 6.</h2>
+            <p>Currently in Canada, Holocaust<br>education is not mandatory in all<br>provinces and territories.</p>
+          </div>
+     
+        </div>
+      </div>
+      </div>
+      <div class="sos_aria">
+        <div class="sos">
+          <div class="text">The lessons of the Holocaust are universal.</div>
+          <a href="#" class="sos_cta">SHOW YOUR SUPPORT</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="army_image">
+      <img src="images/girls_image.png" alt="">
+      <div class="sos_aria">
+          <div class="sos">
+            <div class="text">The lessons of the Holocaust are universal.</div>
+            <a href="#" class="sos_cta">SHOW YOUR SUPPORT</a>
+          </div>
+        </div>
+    </div>
+
+    <div class="scrollableDiv">
+      <div class="container">
+      <div id="scrollableDiv" onscroll="updateScrollProgress()">
+        <div id="progressBar">
+            <div id="progressIndicator"></div>
+        </div>
+        <div class="content">
+          <div class="sec box">
+            <h2>1 in 3 North<br>American teens</h2>
+            <p>think the Holocaust was exaggerated,<br>fabricated or aren’t sure if it even happened.</p>
+            <p class="source">Source: <a target="_blank" href="https://www.liberation75.org/survey">https://www.liberation75.org/survey</a></p>
+          </div>
+          <div class="sec box">
+            <h2>40% of students</h2>
+            <p>say they learned about the Holocaust<br>from social media. The wrong place<br>for a crucial lesson. </p>
+            <p class="source">Source: <a target="_blank" href="https://www.liberation75.org/survey">https://www.liberation75.org/survey</a></p>
+          </div>
+          <div class="sec box">
+            <h2>The right place?<br>A classroom.</h2>
+          </div>
+          <div class="sec box">
+            <h2>The right place?<br>A classroom.</h2>
+            <h2>The right time?<br>In grade 6.</h2>
+          </div>
+          <div class="sec box">
+            <h2>The right place?<br>A classroom.</h2>
+            <h2>The right time?<br>In Grade 6.</h2>
+            <p>Currently in Canada, Holocaust<br>education is not mandatory in all<br>provinces and territories.</p>
+          </div>
+     
+        </div>
+      </div>
+      </div>
+      <div class="sos_aria">
+        <div class="sos">
+          <div class="text">The lessons of the Holocaust are universal.</div>
+          <a href="#" class="sos_cta">SHOW YOUR SUPPORT</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="army_image">
+      <img src="images/shadow_img.jpg" alt="">
+      <div class="sos_aria">
+          <div class="sos">
+            <div class="text">The lessons of the Holocaust are universal.</div>
+            <a href="#" class="sos_cta">SHOW YOUR SUPPORT</a>
+          </div>
+        </div>
+    </div>
+
+    <div class="lesson">
+        <div class="h2"><div class="container">The Young Again/</div></div>
+        <div class="h2"><div class="container">Never Again</div></div>
+        <div class="h2"><div class="container">Lesson Plan</div></div>
+        <div class="container">
+          <p>The Young Again/Never Again Lesson Plan provides you with a new<br>way to make survivors’ stories relevant to kids.</p>
+          <a href="#" class="cta" title="GO TO LESSON PLAN">GO TO LESSON PLAN</a>
+        </div>
+    </div>
+
+    <div class="contact_form">
+       <div class="container">
+          <div class="heading">
+            <h2>A better world starts<br>with early Holocaust<br>education.</h2>
+            <p>We believe that Holocaust education should be taught in an age-appropriate way in grade 6 in every province and territory in Canada. If you agree, please fill out this form to help us convince Education Ministers.</p>
+          </div>
+          <div class="mb-4">
+            <label class="form-label">First and Last Name</label>
+            <input type="name" class="form-control">
+          </div>
+          <div class="mb-4">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control">
+          </div>
+          <div class="mb-4">
+            <label for="exampleFormControlInput1" class="form-label">Province or territory of residence <small>Province or territory of residence</small></label>
+            <input type="text" class="form-control">
+          </div>
+
+          <div class="checkbok mb-5">
+            <label class="container">
+              <input type="checkbox">
+              <span class="checkmark"></span>
+              Receive updates via email
+            </label>
+            
+          </div>
+          <button type="submit" class="cta">SHOW YOUR SUPPORT</button>
+       </div>
+    </div>
+    <div class="banner">
+      <img src="images/banner2.jpg" class="banner_img" alt="" />
+      <img src="images/young_again.svg" class="young_text" alt="">
+    </div>
+
+
+    <footer class="footer">
+      <div class="container">
+          <div class="row">
+            <div class="col-md-2">
+              <a href="#" class="logo"><img src="images/logo.png" width="135px" alt=""></a>
+            </div>
+            <div class="col-md-10">
+              <p class="footer_para">Liberation75 was founded by Marilyn Sinclair in 2018. Marilyn is a daughter of Holocaust survivors. This not-for-profit organization is dedicated to teaching the lessons of the Holocaust through innovation and collaboration with Holocaust organizations from around the world. Holocaust education teaches students to protect freedom and democracy and be better citizens.</p>
+              <div class="content">
+                <a href="#" title="Liberation75.org">Liberation75.org</a>
+                <a href="#" title="Privacy Policy">Privacy Policy</a>
+                <ul class="footer_social">
+                  <li>
+                    <a href="#"><img src="images/instagram.svg" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="images/facebook.svg" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="images/x-twitter.svg" alt="" /></a>
+                  </li>
+                </ul>
+                <p>© 2024 Liberation75. All Rights Reserved.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </footer>
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
